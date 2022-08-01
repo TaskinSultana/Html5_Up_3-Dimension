@@ -1,0 +1,841 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.bg {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5) url("bg.jpg");
+  background-blend-mode: darken;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.logo i {
+  font-size: 40px;
+  color: #fff;
+  margin-top: 60px;
+  padding: 25px;
+  border: 0.5px solid #ddd;
+  border-radius: 50%;
+  margin-bottom: 56px;
+}
+.logo i::after {
+  content: " ";
+  width: 1px;
+  height: 27%;
+  background-color: #ddd;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.one {
+  width: 53%;
+  margin: auto;
+  position: relative;
+}
+.one h1 {
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.one p {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(221, 207, 207);
+  padding: 0px 20px;
+  line-height: 1.9;
+  letter-spacing: 3px;
+  padding-bottom: 60px;
+}
+.one ::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.one ::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 1108px) {
+  .one {
+    width: 72%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 845px) {
+  .one {
+    width: 82%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 725px) {
+  .one {
+    width: 87%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 670px) {
+  .one {
+    width: 92%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 480px) {
+  .one {
+    width: 85%;
+    margin: auto;
+    position: relative;
+  }
+  .one h1 {
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 8px;
+  }
+  .one p {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(221, 207, 207);
+    padding: 0px 12px;
+    line-height: 1.9;
+    letter-spacing: 3px;
+    padding-bottom: 40px;
+  }
+}
+
+.two {
+  width: 45%;
+  margin: auto;
+  position: relative;
+}
+.two .list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.two ul {
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px #ffffff;
+  border-radius: 4px;
+}
+.two li {
+  display: inline-block;
+  list-style: none;
+  border-left: solid 1px #ffffff;
+}
+.two .extra {
+  border-left: none;
+}
+.two a {
+  display: block;
+  width: 100%;
+  height: 25px;
+  padding: 13px 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 20ms ease-in-out;
+}
+.two li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.two ::before {
+  content: "";
+  width: 1px;
+  height: 33%;
+  background-color: #ddd;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 16px);
+}
+@media (max-width: 1108px) {
+  .two {
+    width: 64%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 1108px) and (max-width: 845px) {
+  .two {
+    width: 72%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 1108px) and (max-width: 725px) {
+  .two {
+    width: 77%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 1108px) and (max-width: 670px) {
+  .two {
+    width: 87%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 1108px) and (max-width: 480px) {
+  .two {
+    width: 40%;
+    margin: auto;
+    position: relative;
+  }
+  .two .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .two ul {
+    margin: 0;
+    margin-top: 55px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px #ffffff;
+    border-radius: 4px;
+  }
+  .two li {
+    display: inline-block;
+    list-style: none;
+    border-left: none;
+    border-top: solid 1px #ffffff;
+  }
+  .two .extra {
+    border-top: none;
+  }
+  .two a {
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 20ms ease-in-out;
+  }
+  .two ::before {
+    content: "";
+    width: 1px;
+    height: 18%;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 2px);
+  }
+}
+
+.bg1 {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6) url("bg.jpg");
+  background-blend-mode: darken;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg1 .bg1::before {
+  content: "";
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5) url("bg.jpg");
+  background-blend-mode: darken;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}
+.bg1 .container {
+  width: 48%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 60vh;
+  position: relative;
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.bg1 .cross {
+  margin: 30px;
+}
+.bg1 .cross a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 15px;
+  border-radius: 50%;
+  transition: 20ms ease-in-out;
+}
+.bg1 .cross i {
+  font-size: 20px;
+  color: #fff;
+  overflow: hidden;
+}
+.bg1 .cross a:hover {
+  background-color: #353A3D;
+}
+.bg1 .text {
+  width: 90%;
+  margin: auto;
+}
+.bg1 .text .title {
+  position: relative;
+}
+.bg1 .text .title h3 {
+  font-size: 24px;
+  letter-spacing: 6px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+.bg1 .text .title h3::after {
+  content: "";
+  width: 88px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.bg1 .text .title .line::after {
+  content: "";
+  width: 96px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.bg1 .text .title .line1::after {
+  content: "";
+  width: 82px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.bg1 .text .title .line2::after {
+  content: "";
+  width: 135px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.bg1 .text .image {
+  margin: 30px 0px;
+  border-radius: 4px;
+}
+.bg1 .text .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+.bg1 .text .para .para1 {
+  font-size: 16px;
+  color: #D7D7D8;
+  padding: 10px 8px;
+  line-height: 1.6;
+}
+.bg1 .text .para .para2 {
+  font-size: 16px;
+  color: #D7D7D8;
+  padding: 15px 8px;
+  line-height: 1.6;
+  padding-bottom: 30px;
+}
+.bg1 .text .form {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin-bottom: 40px;
+  position: relative;
+}
+.bg1 .text .form .inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.bg1 .text .form .inner .name {
+  width: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.bg1 .text .form .inner .name label {
+  font-size: 14px;
+}
+.bg1 .text .form .inner .name input {
+  margin-top: 10px;
+  display: block;
+  width: 90%;
+  height: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+.bg1 .text .form .inner .email {
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.bg1 .text .form .inner .email label {
+  font-size: 14px;
+}
+.bg1 .text .form .inner .email input {
+  margin-top: 10px;
+  width: 90%;
+  height: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ddd;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+.bg1 .text .form .message {
+  width: 100%;
+  margin-top: 20px;
+}
+.bg1 .text .form .message label {
+  font-size: 14px;
+}
+.bg1 .text .form .message textarea {
+  margin-top: 10px;
+  width: 95%;
+  height: 130px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+.bg1 .text .form .button {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bg1 .text .form .button .btn1 input {
+  display: block;
+  width: 170px;
+  height: 50px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bg1 .text .form .button .btn2 input {
+  display: block;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ddd;
+}
+.bg1 .text .form .social {
+  margin: 15px 0px;
+}
+.bg1 .text .form .social a {
+  display: inline-block;
+  margin: 2px 12px;
+  color: #ffffff;
+}
+.bg1 .text .form .social i {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.bg1 .text .form .social i:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 1108px) {
+  .bg1 .container {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 60vh;
+    position: relative;
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 845px) {
+  .bg1 .container {
+    width: 70%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 60vh;
+    position: relative;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 725px) {
+  .bg1 .container {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 60vh;
+    position: relative;
+    color: #fff;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 670px) {
+  .bg1 .container {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 60vh;
+    position: relative;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bg1 .title .para .para1 {
+    font-size: 13px;
+    color: #D7D7D8;
+    padding: 4px 4px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+  .bg1 .title .para .para2 {
+    font-size: 13px;
+    color: #D7D7D8;
+    padding: 10px 4px;
+    line-height: 1.4;
+    padding-bottom: 30px;
+    text-align: justify;
+  }
+}
+@media (max-width: 560px) {
+  .bg1 .container .text .form {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .bg1 .container .text .form .inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .bg1 .container .text .form .inner .name {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+  .bg1 .container .text .form .inner .name label {
+    font-size: 14px;
+  }
+  .bg1 .container .text .form .inner .name input {
+    margin-top: 10px;
+    display: block;
+    width: 95%;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: none;
+  }
+  .bg1 .container .text .form .inner .email {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .bg1 .container .text .form .inner .email label {
+    font-size: 14px;
+  }
+  .bg1 .container .text .form .inner .email input {
+    margin-top: 10px;
+    width: 95%;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ddd;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: none;
+  }
+  .bg1 .container .text .form .message {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .bg1 .container .text .form .message label {
+    font-size: 14px;
+  }
+  .bg1 .container .text .form .message textarea {
+    margin-top: 10px;
+    width: 95%;
+    height: 130px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: none;
+  }
+  .bg1 .container .text .form .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .bg1 .container .text .form .button .btn1 {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .bg1 .container .text .form .button .btn1 input {
+    display: block;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-right: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .bg1 .container .text .form .button .btn2 {
+    margin: auto;
+  }
+  .bg1 .container .text .form .button .btn2 input {
+    display: block;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+  }
+  .bg1 .container .text .form .social {
+    margin: auto;
+    margin-top: 10px;
+  }
+  .bg1 .container .text .form .social a {
+    display: inline-block;
+    margin: 2px 10px;
+    color: #ffffff;
+  }
+  .bg1 .container .text .form .social i {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .bg1 .container .text .form {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .bg1 .container .text .form .inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .bg1 .container .text .form .inner .name {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+  .bg1 .container .text .form .inner .name label {
+    font-size: 14px;
+  }
+  .bg1 .container .text .form .inner .name input {
+    margin-top: 10px;
+    display: block;
+    width: 93%;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: none;
+  }
+  .bg1 .container .text .form .inner .email {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .bg1 .container .text .form .inner .email label {
+    font-size: 14px;
+  }
+  .bg1 .container .text .form .inner .email input {
+    margin-top: 10px;
+    width: 93%;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ddd;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: none;
+  }
+  .bg1 .container .text .form .message {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .bg1 .container .text .form .message label {
+    font-size: 14px;
+  }
+  .bg1 .container .text .form .message textarea {
+    margin-top: 10px;
+    width: 93%;
+    height: 130px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: none;
+  }
+  .bg1 .container .text .form .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .bg1 .container .text .form .button .btn1 {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .bg1 .container .text .form .button .btn1 input {
+    display: block;
+    width: 220px;
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-right: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .bg1 .container .text .form .button .btn2 {
+    margin: auto;
+  }
+  .bg1 .container .text .form .button .btn2 input {
+    display: block;
+    width: 220px;
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+  }
+}/*# sourceMappingURL=style.css.map */
